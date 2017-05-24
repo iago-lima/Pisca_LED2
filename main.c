@@ -127,10 +127,7 @@ void init_timer(){
     
     INTCONbits.GIE=1;
 }
-void delay(){
-    int i = 0;
-    for(i=0; i< 8000000; i++);
-}
+
 void main(void) {
     OSCCON = 0x72;
     TRISD=0x00;//PORTD as output
